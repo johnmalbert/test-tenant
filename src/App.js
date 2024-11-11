@@ -9,7 +9,7 @@ const App = () => {
     <Router>
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="/">Tenant Management</a>
+          <a className="navbar-brand" style={{ marginLeft: '10px' }}  href="/">(POC) Tenant Management (POC)</a>
           <div className="navbar-nav">
             <a className="nav-item nav-link" href="/">Dashboard</a>
             <a className="nav-item nav-link" href="/request-tenant">Request New Tenant</a>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
 import Dashboard from './pages/Dashboard';
 import RequestTenant from './pages/RequestTenant';
 import UpdateTenant from './pages/UpdateTenant';

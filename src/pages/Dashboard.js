@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
 
 const Dashboard = () => {
   return (
     <div>
-      <h1>Welcome, UserName</h1>
       <div className="mt-4">
-        <h4>Test Tenant Tracker</h4>
+        <div className="header-container">
+          <h4>Tenant Management Dashboard</h4>
+          <span className="welcome-text">Welcome, UserName</span>
+        </div>
+        <h5>
+          Use this portal as a tool for test tenant creation and maintenance. If
+          you have any questions, please reach out to the Launch team
+          (vivainsightsfulfillment@microsoft.com)
+        </h5>
         <iframe
           title="PowerBI Report"
           width="75%"

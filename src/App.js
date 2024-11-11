@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import RequestTenant from './pages/RequestTenant';
+import UpdateTenant from './pages/UpdateTenant';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <a className="navbar-brand" href="/">Tenant Management</a>
+          <div className="navbar-nav">
+            <a className="nav-item nav-link" href="/">Dashboard</a>
+            <a className="nav-item nav-link" href="/request-tenant">Request New Tenant</a>
+            <a className="nav-item nav-link" href="/update-tenant">Update Existing Tenant</a>
+          </div>
+        </nav>
+        <div className="container mt-4">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/request-tenant" element={<RequestTenant />} />
+            <Route path="/update-tenant" element={<UpdateTenant />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

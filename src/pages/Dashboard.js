@@ -11,7 +11,7 @@ const Dashboard = () => {
         <h5>
           Use this portal as a tool for test tenant creation and maintenance. If
           you have any questions, please reach out to the Launch team
-          (vivainsightsfulfillment@microsoft.com)
+          (insights-fulfillment@microsoft.com)
         </h5>
         <iframe
           title="PowerBI Report"
